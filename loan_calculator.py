@@ -50,23 +50,27 @@ def print_results(payment, interest_paid, money_owed):
     print("£", money_owed, "is still owed")
 
 
-# instantiate variables
-money_owed = 0
-apr_rate = 0
-payment = 0
-months = 0
+def main():
+    # instantiate variables
+    money_owed = 0
+    apr_rate = 0
+    payment = 0
+    months = 0
 
-# assign them values as per user input
-money_owed = float(calc_money_owed())
-apr_rate = float(calc_apr_rate())
-payment = float(calc_payment())
-months = int(calc_months())
+    # assign them values as per user input
+    money_owed = float(calc_money_owed())
+    apr_rate = float(calc_apr_rate())
+    payment = float(calc_payment())
+    months = int(calc_months())
 
 
-# calculate loan details
-monthly_rate = apr_rate / 100 / 12
-interest_paid = money_owed * monthly_rate
-money_owed = (money_owed + interest_paid) - payment
+    # calculate loan details
+    monthly_rate = apr_rate / 100 / 12
+    interest_paid = money_owed * monthly_rate
+    money_owed = (money_owed + interest_paid) - payment
 
-# print results
-print_results(payment, interest_paid, money_owed)
+    # print results
+    print_results(payment, interest_paid, money_owed)
+
+
+main()
