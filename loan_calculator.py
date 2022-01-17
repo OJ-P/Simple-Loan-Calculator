@@ -51,7 +51,7 @@ def int_validation(value):  # function to validate input that should be an int
 
 
 def print_results(payment, interest_paid, money_owed):
-    print("£", f'{payment:.2f}', "has been payed, of which £", f'{interest_paid:.2f}', "was interest\n")
+    print("£", f'{payment:.2f}', "has been payed. Loan has accumulated £", f'{interest_paid:.2f}', "in interest\n")
     print("£", f'{money_owed:.2f}', "is still owed")
     # f'{variable:.2f}' this formats the enclosed variable to 2 decimal places (using f strings)
 
