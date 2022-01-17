@@ -63,7 +63,6 @@ def main():
     loan_term = 0
     months_remaining = 0
 
-
     # assign them values as per user input
     money_owed = float(calc_money_owed())
     apr_rate = float(calc_apr_rate())
