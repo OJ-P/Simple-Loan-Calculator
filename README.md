@@ -1,2 +1,2 @@
-# Simple-Loan-Calculator
-# Command line loan calculator
+Simple-Loan-Calculator
+Command line loan calculator
